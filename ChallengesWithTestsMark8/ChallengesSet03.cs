@@ -32,12 +32,15 @@ namespace ChallengesWithTestsMark8
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
-            throw new NotImplementedException();
+           
+            decimal x = dividend / divisor;
+            return x;
         }
 
         public int LastMinusFirst(int[] nums)
         {
-            throw new NotImplementedException();
+            var x = nums[nums.Length - 1] - nums[0];
+                return x;
         }
 
         public int[] GetOddsBelow100()
