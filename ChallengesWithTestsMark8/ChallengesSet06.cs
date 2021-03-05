@@ -12,7 +12,15 @@ namespace ChallengesWithTestsMark8
 
         public bool IsPrimeNumber(int num)
         {
-            throw new NotImplementedException();
+            if (num == 1 || num <= 0)
+                return false;
+            if (num == 2 || num == 3 || num == 5)
+                return true;
+            if (num % 2 != 0 && num % 3 != 0 && num % 5 != 0 && num % 7 != 0 && num % 11 != 0 && num % 13 != 0)
+                return true;
+            else
+                return false;
+            
         }
 
         public int IndexOfLastUniqueLetter(string str)
